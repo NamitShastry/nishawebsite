@@ -104,7 +104,7 @@
 
     var img = document.createElement("img");
     img.alt = item.title + (opts.videoStyle ? " thumbnail" : " cover artwork");
-    img.loading = "lazy";
+    img.loading = "eager";
 
     var placeholder = document.createElement("div");
     placeholder.className = "work-figure__placeholder";
