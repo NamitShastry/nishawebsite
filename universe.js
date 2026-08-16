@@ -250,6 +250,9 @@
       links.className = "work-row__links";
       links.appendChild(buyLink("Amazon", "Coming Soon", novel.amazonUrl));
       links.appendChild(buyLink("Flipkart", "Coming Soon", novel.flipkartUrl));
+      if (novel.publisherUrl) {
+        links.appendChild(buyLink("Publisher", "Coming Soon", novel.publisherUrl));
+      }
       body.appendChild(links);
 
       row.appendChild(media);
@@ -290,7 +293,7 @@
 
       var links = document.createElement("div");
       links.className = "work-row__links";
-      links.appendChild(buyLink("Read Issue", "Coming Soon"));
+      links.appendChild(buyLink("Read Issue", "Coming Soon", comic.readUrl));
       body.appendChild(links);
 
       row.appendChild(media);
@@ -339,6 +342,11 @@
       player.appendChild(meta);
       body.appendChild(player);
 
+      var links = document.createElement("div");
+      links.className = "work-row__links";
+      links.appendChild(buyLink("Listen", "Coming Soon", story.listenUrl));
+      body.appendChild(links);
+
       row.appendChild(media);
       row.appendChild(body);
       container.appendChild(row);
@@ -377,7 +385,7 @@
 
       var links = document.createElement("div");
       links.className = "work-row__links";
-      links.appendChild(buyLink("Watch Story", "Coming Soon"));
+      links.appendChild(buyLink("Watch Story", "Coming Soon", video.watchUrl));
       body.appendChild(links);
 
       row.appendChild(media);

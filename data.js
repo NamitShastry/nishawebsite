@@ -9,12 +9,15 @@
 
 /* ---------- NOVELS ---------- */
 /* image: images/novel1.png ... novel8.png (in this order, directly inside /images — no subfolder)
-   Confirmed mapping for the 4 covers supplied so far:
+   Confirmed mapping for all 8 covers:
      novel1.png -> Child of Two Worlds (Book 1)
      novel2.png -> Dharma's Reckoning (Book 2)
      novel3.png -> दो दुनिया का वारिस (Hindi, Part 1)
      novel4.png -> धर्मा का महायुद्ध (Hindi, Part 2)
-   novel5..novel8 remain placeholders until supplied.
+     novel5.png -> केयूर का कहर
+     novel6.png -> द इंटर्न
+     novel7.png -> एक रहस्यमयी खेल
+     novel8.png -> Poison Girl
    NOTE: use whatever extension matches the file's REAL format (.jpeg/.jpg for
    photos/WhatsApp exports, .png for true PNGs) — the extension must match
    the actual file content, not just be renamed, or it can silently fail to load. */
@@ -41,7 +44,9 @@ window.NOVELS = [
     language: "English",
     genre: "Science Fiction",
     description: "The second and concluding part of The Saga Untold, involving Dharma, Supreme Commander Nokoevid, the Fran Galaxy and Muverse \u2014 with themes of rebellion, empire, destiny and cosmic warfare.",
-    theme: "cosmic"
+    theme: "cosmic",
+    amazonUrl: "https://www.amazon.in/-/hi/Dharmas-Reckoning-Book-Untold-Dharma/dp/9390347505",
+    flipkartUrl: "https://www.flipkart.com/dharmas-reckoning-book-2-saga-untold-dharma-series/p/itmf8d8ac988eb71"
   },
   {
     id: "do-duniya-ka-waris",
@@ -52,7 +57,9 @@ window.NOVELS = [
     language: "Hindi",
     genre: "Science Fiction / Fantasy",
     description: "The Hindi edition connected to the Dharma saga \u2014 an interstellar adventure involving Dharma, another world, advanced civilizations, space politics, technology and war.",
-    theme: "cosmic"
+    theme: "cosmic",
+    amazonUrl: "https://www.amazon.in/Do-Duniya-Ka-Waris-Ankahi-ebook/dp/B0CPYMPQ21",
+    flipkartUrl: "https://www.flipkart.com/hi/do-duniya-ka-waris-ek-ankahi-katha-bhaag-1/p/itm82925cf0ec4ae"
   },
   {
     id: "dharma-ka-mahayudh",
@@ -63,7 +70,9 @@ window.NOVELS = [
     language: "Hindi",
     genre: "Science Fiction / Fantasy",
     description: "The Hindi continuation involving Dharma\u2019s confrontation with Supreme Commander Nokoevid, with conflicts spanning the Fran Galaxy and Muverse.",
-    theme: "cosmic"
+    theme: "cosmic",
+    amazonUrl: "https://www.amazon.in/Dharma-Ka-Mahayuddha-Ankahi-Katha/dp/9348578111",
+    publisherUrl: "https://www.rajmangalpublishers.com/book/dharma-ka-mahayuddha-ankahi-katha-part-2"
   },
   {
     id: "keyur-ka-kahar-novel",
@@ -74,7 +83,9 @@ window.NOVELS = [
     language: "Hindi",
     genre: "Science Fiction Fantasy",
     description: "A science-fiction fantasy connected to the Dharma series, exploring Eritria\u2019s troubled past, Tejas, crime, conspiracy and social upheaval leading toward a larger interstellar conflict.",
-    theme: "amber"
+    theme: "amber",
+    amazonUrl: "https://www.amazon.in/Keyur-Kahar-Dr-Nisha-Shastry/dp/9348578987?s=bazaar",
+    flipkartUrl: "https://www.flipkart.com/hi/keyur-ka-kahar/p/itm29a92daf082a8"
   },
   {
     id: "the-intern",
@@ -85,7 +96,9 @@ window.NOVELS = [
     language: "Hindi",
     genre: "Thriller / Murder Mystery",
     description: "A murder mystery involving an intern, a pharmaceutical company, a mysterious professor\u2019s death and interconnected events surrounding a series of killings.",
-    theme: "noir"
+    theme: "noir",
+    amazonUrl: "https://www.amazon.in/Intern-Hindi-Dr-Nisha-Shastry-ebook/dp/B0DLGLFKZY",
+    flipkartUrl: "https://www.flipkart.com/the-intern/p/itm7c24ea81bb649"
   },
   {
     id: "ek-rahasyamayi-khel",
@@ -96,7 +109,9 @@ window.NOVELS = [
     language: "Hindi",
     genre: "Psychological Crime Thriller",
     description: "A psychological crime thriller inspired by true events, involving mystery, fear, crime, psychological tension and unexpected twists.",
-    theme: "noir"
+    theme: "noir",
+    amazonUrl: "https://www.amazon.in/Rahasyamayi-Khel-Dr-Nisha-Shastry/dp/9348578324",
+    flipkartUrl: "https://www.flipkart.com/ek-rahasyamayi-khel/p/itmf3dd7b9d4ab2a"
   },
   {
     id: "poison-girl",
@@ -107,7 +122,9 @@ window.NOVELS = [
     language: "English",
     genre: "Science Thriller",
     description: "A science-based thriller involving Natasha, the mysterious \u201cPoison Girl\u201d, dangerous events, murder, investigation, AI, identity, control and ethical questions surrounding scientific advancement.",
-    theme: "toxic"
+    theme: "toxic",
+    amazonUrl: "https://www.amazon.com.br/Poison-Girl-Dr-Nisha-Shastry/dp/9349988828",
+    flipkartUrl: "https://www.flipkart.com/poison-girl/p/itmd8087c4b160c6"
   }
 ];
 
@@ -123,7 +140,8 @@ window.COMICS = [
     language: "English",
     genre: "Superhero / Sci-Fi Action",
     description: "Set on distant Zydia, where the Glory Games determine power, Ritugn is drawn into an arena involving super-speed warriors, assassins and the undefeated champion known as The Ultimate \u2014 exploring the conflict between victory and justice.",
-    theme: "cosmic"
+    theme: "cosmic",
+    readUrl: "https://globalcomix.com/read/824779bd-5ab8-4e52-bbe9-85dae4860289/1/1"
   },
   {
     id: "the-terror-of-tamasur",
@@ -134,7 +152,8 @@ window.COMICS = [
     language: "English",
     genre: "Superhero / Sci-Fi Horror",
     description: "Involving Dr. Ishan Sharma, dark matter, a mysterious cosmic anomaly between Jupiter and Saturn, and Tamasur \u2014 a destructive dark-matter entity. Ritugn faces the threat while science and mythology intersect.",
-    theme: "void"
+    theme: "void",
+    readUrl: "https://globalcomix.com/read/0399f25e-5713-4f93-a3bd-87fbfab05b0c/1"
   },
   {
     id: "wrath-of-zambara",
@@ -145,7 +164,8 @@ window.COMICS = [
     language: "English",
     genre: "Superhero / Supernatural",
     description: "Involving the awakening of Zambara, forbidden black magic and supernatural forces \u2014 Ritugn confronts a powerful ancient deity.",
-    theme: "amber"
+    theme: "amber",
+    readUrl: "https://globalcomix.com/read/11b4c353-a828-441d-8115-9c6db5ddcc1c/1/1"
   },
   {
     id: "varka-heist",
@@ -156,7 +176,8 @@ window.COMICS = [
     language: "English",
     genre: "Superhero / Sci-Fi Action",
     description: "Involving Varka, alien forces, Nyara, Ritugn and Zorasta \u2014 a super-intelligent machine controlling civilizations and forcing them to harvest the energy source.",
-    theme: "cosmic"
+    theme: "cosmic",
+    readUrl: "https://globalcomix.com/read/cae29fd5-d963-445b-b1a4-bcfdb00425ad/1/1"
   },
   {
     id: "poison-girl-comic",
@@ -167,7 +188,8 @@ window.COMICS = [
     language: "English",
     genre: "Crime Thriller",
     description: "Involving Inspector Vijay Verma, mysterious poison attacks and the hidden criminal network Obsidian.",
-    theme: "toxic"
+    theme: "toxic",
+    readUrl: "https://globalcomix.com/read/409fea17-5427-4887-960c-8b2ac11e049e/1"
   }
 ];
 
@@ -182,7 +204,8 @@ window.AUDIO_STORIES = [
     genre: "Dark Mystery",
     description: "A dark mystery involving a beautiful woman committing brutal murders, psychological illness, serial-killer possibilities and a twist-oriented climax.",
     duration: "Coming soon",
-    theme: "noir"
+    theme: "noir",
+    listenUrl: "https://youtu.be/wWHXJdgEK_I"
   },
   {
     id: "keyur-ka-kahar-audio",
@@ -192,7 +215,8 @@ window.AUDIO_STORIES = [
     genre: "Science Fiction",
     description: "A connected science-fiction story exploring Tejas\u2019s transformation into a violent criminal, social unrest, Eritria and the events preceding the Xor-Eritria war.",
     duration: "Coming soon",
-    theme: "amber"
+    theme: "amber",
+    listenUrl: "https://youtu.be/Gk18Z7UanN0"
   }
 ];
 
@@ -206,7 +230,8 @@ window.VIDEO_STORIES = [
     language: "Hindi",
     genre: "Supernatural Thriller",
     description: "A dark supernatural thriller involving a plane crash, Yakhsh, the mysterious DarkVeil and a supernatural bargain that transforms Yakhsh into Assassin Prime.",
-    theme: "void"
+    theme: "void",
+    watchUrl: "https://youtube.com/playlist?list=PLk07Q19O0k2C9cjuAieXpBshefyvI_3y0"
   },
   {
     id: "ritugn-video",
@@ -215,7 +240,8 @@ window.VIDEO_STORIES = [
     language: "Hindi",
     genre: "Sci-Fi / Mythology Superhero",
     description: "A science-fiction / mythology superhero series connecting ancient wisdom, future science, cosmic battles, dark matter, wormholes and celestial energies.",
-    theme: "cosmic"
+    theme: "cosmic",
+    watchUrl: "https://youtube.com/playlist?list=PLk07Q19O0k2Aa123nrbmw7Sp57dZORE0Q"
   },
   {
     id: "dharma-video",
@@ -224,7 +250,8 @@ window.VIDEO_STORIES = [
     language: "Hindi",
     genre: "Science Fiction",
     description: "The Child of Two Worlds saga, involving Dharma, parallel worlds, mythology, artificial intelligence, interstellar empires and the conflict surrounding his identity and destiny.",
-    theme: "cosmic"
+    theme: "cosmic",
+    watchUrl: "https://youtu.be/4dwI1o234Mo"
   },
   {
     id: "anjan-katil",
@@ -233,7 +260,8 @@ window.VIDEO_STORIES = [
     language: "Hindi",
     genre: "Thriller / Horror",
     description: "A dark Hindi thriller/horror story involving mysterious family murders, revenge, hidden history and uncertainty over whether the killer is supernatural or human.",
-    theme: "noir"
+    theme: "noir",
+    watchUrl: "https://youtu.be/hY94QKo6rqU"
   },
   {
     id: "last-olethros",
@@ -242,7 +270,8 @@ window.VIDEO_STORIES = [
     language: "Hindi",
     genre: "Mystical Sci-Fi / Fantasy",
     description: "A mystical sci-fi/fantasy saga involving eight civilizations, rival fronts and extraordinary characters with powers connected to elements, matter, probability, quantum computation and planetary forces.",
-    theme: "amber"
+    theme: "amber",
+    watchUrl: "https://youtu.be/h6d-u5VBbjI"
   },
   {
     id: "vanguard",
@@ -251,7 +280,8 @@ window.VIDEO_STORIES = [
     language: "English",
     genre: "Hard Science Fiction",
     description: "Set in a future where humanity has spread across the Solar System \u2014 involving interplanetary politics, technology, war, survival and expansion.",
-    theme: "cosmic"
+    theme: "cosmic",
+    watchUrl: "https://youtube.com/playlist?list=PLk07Q19O0k2BTKCavz0QEPF1sK658mdMH"
   }
 ];
 
