@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Dr. Nisha Shastry | Novels, Comics, Audio Stories & More</title>
+<meta name="description" content="Explore the worlds of Dr. Nisha Shastry—novels, comics, audio stories, visual narratives and immersive storytelling where science, mystery and imagination collide." />
+<meta name="author" content="Dr. Nisha Shastry" />
+
+<meta property="og:title" content="Dr. Nisha Shastry | Novels, Comics, Audio Stories & More" />
+<meta property="og:description" content="Explore the worlds of Dr. Nisha Shastry—novels, comics, audio stories, visual narratives and immersive storytelling where science, mystery and imagination collide." />
+<meta property="og:type" content="website" />
+<meta property="og:image" content="/images/photo.png" />
+
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400&family=EB+Garamond:ital,wght@0,400;0,500;1,400&display=swap" rel="stylesheet" />
+
+<link rel="stylesheet" href="styles.css" />
+<link rel="stylesheet" href="universe.css" />
+</head>
+<body>
+
+<!-- ============ UNIVERSE CANVAS — one persistent WebGL renderer for the
+     whole page. Sits above the per-section atmosphere gradients (which
+     already carry each world's lighting/color temperature) and below
+     all readable content. See universe-camera.js. ============ -->
+<canvas id="universeCanvas" aria-hidden="true"></canvas>
+
+<!-- ============ ATMOSPHERIC BACKGROUND (persistent, behind everything) ============ -->
+<div class="atmosphere" aria-hidden="true">
+  <div class="atmosphere__field field-1"></div>
+  <div class="atmosphere__field field-2"></div>
+  <div class="atmosphere__field field-3"></div>
+  <div class="atmosphere__grain"></div>
+</div>
+
+<!-- ============ NAVBAR ============ -->
+<header class="navbar" id="navbar">
+  <div class="navbar__inner">
+    <a href="#top" class="navbar__brand" id="navBrand">Dr. Nisha Shastry</a>
+
+    <nav class="navbar__links" id="navLinks" aria-label="Primary">
+      <a href="#about" class="nav-link active-link" data-nav>About</a>
+      <a href="#novels" class="nav-link" data-nav>Novels</a>
+      <a href="#comics" class="nav-link" data-nav>Comics</a>
+      <a href="#audiostories" class="nav-link" data-nav>AudioStories</a>
+      <a href="#videostories" class="nav-link" data-nav>VideoStories</a>
+      <a href="#members" class="nav-link" data-nav>Members</a>
+      <a href="#social" class="nav-link" data-nav>Social Media Handles</a>
+      <a href="#contact" class="nav-link" data-nav>Contact Me</a>
+    </nav>
+
+    <button class="navbar__toggle" id="navToggle" aria-label="Open menu" aria-expanded="false" aria-controls="mobileMenu">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+
+  <!-- Mobile menu -->
+  <div class="mobile-menu" id="mobileMenu">
+    <nav class="mobile-menu__links" aria-label="Mobile Primary">
+      <a href="#about" data-nav data-mobile>About</a>
+      <a href="#novels" data-nav data-mobile>Novels</a>
+      <a href="#comics" data-nav data-mobile>Comics</a>
+      <a href="#audiostories" data-nav data-mobile>AudioStories</a>
+      <a href="#videostories" data-nav data-mobile>VideoStories</a>
+      <a href="#members" data-nav data-mobile>Members</a>
+      <a href="#social" data-nav data-mobile>Social Media Handles</a>
+      <a href="#contact" data-nav data-mobile>Contact Me</a>
+    </nav>
+  </div>
+</header>
+
+<main id="top">
+
+  <!-- ============ HERO / ABOUT ============ -->
+  <section class="hero" id="about">
+    <div class="hero__inner">
+
+      <div class="hero__image-col" data-reveal="image">
+        <div class="hero__image-frame">
+          <img src="images/photo.png" alt="Portrait of Dr. Nisha Shastry" class="hero__image" />
+          <div class="hero__image-glow" aria-hidden="true"></div>
+        </div>
+      </div>
+
+      <div class="hero__text-col">
+        <p class="hero__para" data-reveal="text" data-order="1">Dr. Nisha Shastry is a scientist at heart, a storyteller by passion, and a creator of worlds where the impossible feels dangerously real.</p>
+
+        <p class="hero__para" data-reveal="text" data-order="2">An author of novels and comics, Dr. Shastry has created stories that move beyond the printed page—into audio stories, visual narratives and music-inspired storytelling—building immersive fictional worlds for a new generation of readers and listeners.</p>
+
+        <p class="hero__para" data-reveal="text" data-order="3">But Dr. Shastry&rsquo;s imagination doesn&rsquo;t stop with novels.</p>
+
+        <p class="hero__para" data-reveal="text" data-order="4">Through Nisha Shastry Audiostories, she brings her fictional worlds to life through audio and video storytelling, while her comics and the expanding Ritugn universe venture into heroes, ancient forces, supernatural darkness and larger-than-life battles.</p>
+
+        <p class="hero__para" data-reveal="text" data-order="5">With a Ph.D. in Public Administration and more than two decades of professional experience, she brings an unusual perspective to speculative fiction—combining the curiosity of a science enthusiast with an understanding of people, power, conflict and society.</p>
+
+        <p class="hero__para hero__para--closing" data-reveal="text" data-order="6">Welcome to the worlds of Dr. Nisha Shastry. Explore the unknown.</p>
+      </div>
+
+    </div>
+
+    <div class="scroll-cue" aria-hidden="true"><span></span></div>
+  </section>
+
+  <!-- ============ MY VISION ============ -->
+  <section class="vision" id="vision">
+    <h2 class="section-heading" data-reveal="heading">My Vision</h2>
+    <p class="vision__text" data-reveal="fade-up">&ldquo;To inspire a new generation of readers through bold novels and immersive comics that blend science, mystery, imagination and adventure. My vision is to make storytelling exciting for today&rsquo;s youth&mdash;sparking curiosity, creativity and a lifelong love for reading.&rdquo;</p>
+  </section>
+
+  <!-- ============ MY AWARDS ============ -->
+  <section class="awards" id="awards">
+    <h2 class="section-heading" data-reveal="heading">My Awards</h2>
+
+    <div class="award-card" data-reveal="card">
+      <div class="award-card__bg" style="background-image:url('images/card1.png')"></div>
+      <div class="award-card__overlay"></div>
+      <div class="award-card__glow"></div>
+      <div class="award-card__content">
+        <h3 class="award-card__title">A Proud Moment at the British Parliament</h3>
+        <p class="award-card__text">A memorable milestone in Dr. Nisha Shastry&rsquo;s literary journey was the privilege of presenting her science-fiction novel, Child of Two Worlds, at the British Parliament, House of Commons, UK. This special moment marked the journey of her storytelling beyond borders and reflected her vision of taking imaginative Indian science fiction to readers across the world.</p>
+      </div>
+    </div>
+
+    <div class="award-card" data-reveal="card">
+      <div class="award-card__bg" style="background-image:url('images/card2.png')"></div>
+      <div class="award-card__overlay"></div>
+      <div class="award-card__glow"></div>
+      <div class="award-card__content">
+        <h3 class="award-card__title">Featured by Mid-day</h3>
+        <p class="award-card__text">Dr. Nisha Shastry&rsquo;s sci-fi novel Child of Two Worlds was featured by Mid-day among its reading recommendations celebrating India&rsquo;s diverse literary voices. The recognition highlights her distinctive approach to science fiction—bringing together imagination, futuristic concepts and compelling storytelling for a new generation of readers.</p>
+      </div>
+    </div>
+
+    <div class="award-card" data-reveal="card">
+      <div class="award-card__bg" style="background-image:url('images/card3.png')"></div>
+      <div class="award-card__overlay"></div>
+      <div class="award-card__glow"></div>
+      <div class="award-card__content">
+        <h3 class="award-card__title">Recommended for the Big Screen</h3>
+        <p class="award-card__text">Dr. Nisha Shastry&rsquo;s gripping mystery-thriller The Intern caught the attention of Filmy Charcha, which featured the novel among Indian books it believes deserve a Bollywood movie adaptation. With its suspenseful narrative, intriguing characters and cinematic appeal, The Intern showcases Dr. Shastry&rsquo;s ability to create stories that feel destined to go beyond the page and onto the screen.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ PRESS / FEATURED LINK CARDS ============ -->
+  <section class="press" id="press">
+    <a class="press-card" data-reveal="card-left"
+       href="https://www.mid-day.com/buzz/article/love-reading-discover-indias-diverse-literary-voices-and-their-work-2283"
+       target="_blank" rel="noopener noreferrer" aria-label="Read the Mid-Day feature (opens in new tab)">
+      <div class="press-card__bg" style="background-image:url('images/cardleft.png')"></div>
+      <div class="press-card__overlay"></div>
+      <div class="press-card__glow"></div>
+      <div class="press-card__content">
+        <h3 class="press-card__title">Feature By Mid&nbsp;&ndash;&nbsp;Day</h3>
+        <span class="press-card__link">Read the feature &rarr;</span>
+      </div>
+    </a>
+
+    <a class="press-card" data-reveal="card-right"
+       href="https://filmycharcha.com/bollywood/bollywood-are-you-listening-these-indian-books-need-to-be-movies"
+       target="_blank" rel="noopener noreferrer" aria-label="Read the Filmy Charcha feature (opens in new tab)">
+      <div class="press-card__bg" style="background-image:url('images/cardright.png')"></div>
+      <div class="press-card__overlay"></div>
+      <div class="press-card__glow"></div>
+      <div class="press-card__content">
+        <h3 class="press-card__title">Recommended for the Big Screen</h3>
+        <span class="press-card__link">Read the feature &rarr;</span>
+      </div>
+    </a>
+  </section>
+
+  <!-- ============ CINEMATIC CIRCLE TRANSFORMATION ============ -->
+  <section class="cinematic" id="cinematic">
+    <div class="cinematic__sticky">
+      <div class="cinematic__image-wrap" id="circleWrap">
+        <img src="images/circle.png" alt="An evocative image from the worlds of Dr. Nisha Shastry" class="cinematic__image" id="circleImage" />
+      </div>
+      <h2 class="cinematic__heading" id="cinematicHeading">Dive Deep Into The World of Stories</h2>
+    </div>
+    <div class="cinematic__spacer"></div>
+  </section>
+
+  <!-- ============ NOVELS ============ -->
+  <section class="universe-section theme-novels" id="novels">
+    <div class="universe-atmosphere" aria-hidden="true">
+      <div class="field field-a"></div>
+      <div class="field field-b"></div>
+    </div>
+
+    <div class="universe-hero">
+      <span class="universe-hero__kicker" data-reveal="fade-up">The Literary Universe</span>
+      <h2 class="universe-hero__title" data-reveal="fade-up">Novels</h2>
+      <p class="universe-hero__sub" data-reveal="fade-up">Stories Beyond the Known</p>
+    </div>
+
+    <div class="series-banner">
+      <span class="series-banner__label">Series</span>
+      <h3 class="series-banner__title">The Saga Untold</h3>
+      <div class="series-banner__line"></div>
+    </div>
+
+    <p class="coming-note">Purchase links will go live soon. Cover artwork will appear automatically once added.</p>
+
+    <div class="catalogue" id="novelsCatalogue"></div>
+  </section>
+
+  <!-- ============ COMICS ============ -->
+  <section class="universe-section theme-comics" id="comics">
+    <div class="universe-atmosphere" aria-hidden="true">
+      <div class="field field-a"></div>
+      <div class="field field-b"></div>
+    </div>
+
+    <div class="universe-hero">
+      <span class="universe-hero__kicker" data-reveal="fade-up">The Ritugn Universe</span>
+      <h2 class="universe-hero__title" data-reveal="fade-up">Comics</h2>
+      <p class="universe-hero__sub" data-reveal="fade-up">Where myths, science and imagination collide.</p>
+    </div>
+
+    <p class="coming-note">Reading links will go live soon. Cover artwork will appear automatically once added.</p>
+
+    <div class="catalogue" id="comicsCatalogue"></div>
+  </section>
+
+  <!-- ============ AUDIO STORIES ============ -->
+  <section class="universe-section theme-audio" id="audiostories">
+    <div class="universe-atmosphere" aria-hidden="true">
+      <div class="field field-a"></div>
+      <div class="field field-b"></div>
+    </div>
+
+    <div class="universe-hero">
+      <span class="universe-hero__kicker" data-reveal="fade-up">The Listening Chamber</span>
+      <h2 class="universe-hero__title" data-reveal="fade-up">Audio Stories</h2>
+      <p class="universe-hero__sub" data-reveal="fade-up">Close your eyes. The story will find you.</p>
+    </div>
+
+    <p class="coming-note">Playback will go live soon. Episode artwork will appear automatically once added.</p>
+
+    <div class="catalogue" id="audioCatalogue"></div>
+  </section>
+
+  <!-- ============ VIDEO STORIES ============ -->
+  <section class="universe-section theme-video" id="videostories">
+    <div class="universe-atmosphere" aria-hidden="true">
+      <div class="field field-a"></div>
+      <div class="field field-b"></div>
+    </div>
+
+    <div class="universe-hero">
+      <span class="universe-hero__kicker" data-reveal="fade-up">Nisha Shastry Cinematic Universe</span>
+      <h2 class="universe-hero__title" data-reveal="fade-up">Video Stories</h2>
+      <p class="universe-hero__sub" data-reveal="fade-up">Every world, brought to the screen.</p>
+    </div>
+
+    <p class="coming-note">Watching will go live soon. Thumbnails will appear automatically once added.</p>
+
+    <div class="catalogue" id="videoCatalogue"></div>
+  </section>
+
+  <!-- ============ MEMBERS ============ -->
+  <section class="universe-section theme-members" id="members">
+    <div class="universe-atmosphere" aria-hidden="true">
+      <div class="field field-a"></div>
+      <div class="field field-b"></div>
+    </div>
+    <div class="portal-ring" aria-hidden="true"></div>
+
+    <div class="universe-hero universe-hero--tight">
+      <span class="universe-hero__kicker" data-reveal="fade-up">The Inner Circle</span>
+      <h2 class="universe-hero__title" data-reveal="fade-up">Members</h2>
+      <span class="coming-soon-badge" data-reveal="fade-up">Coming Soon</span>
+      <p class="universe-hero__footnote" data-reveal="fade-up">A future chapter of the Nisha Shastry storytelling universe.</p>
+    </div>
+  </section>
+
+  <!-- ============ SOCIAL MEDIA HANDLES ============ -->
+  <section class="universe-section theme-social" id="social">
+    <div class="universe-atmosphere" aria-hidden="true">
+      <div class="field field-a"></div>
+      <div class="field field-b"></div>
+    </div>
+
+    <div class="universe-hero universe-hero--tight">
+      <span class="universe-hero__kicker" data-reveal="fade-up">Portals to the Outside World</span>
+      <h2 class="universe-hero__title" data-reveal="fade-up">Social Media Handles</h2>
+      <p class="universe-hero__sub" data-reveal="fade-up">Follow the Journey</p>
+    </div>
+
+    <div class="social-grid" id="socialGrid"></div>
+  </section>
+
+  <!-- ============ CONTACT ME ============ -->
+  <section class="universe-section theme-contact" id="contact">
+    <div class="universe-atmosphere" aria-hidden="true">
+      <div class="field field-a"></div>
+      <div class="field field-b"></div>
+    </div>
+
+    <div class="universe-hero universe-hero--tight">
+      <span class="universe-hero__kicker" data-reveal="fade-up">The Final Doorway</span>
+      <h2 class="universe-hero__title" data-reveal="fade-up">Contact Me</h2>
+      <span class="coming-soon-badge" data-reveal="fade-up">Coming Soon</span>
+      <p class="universe-hero__footnote" data-reveal="fade-up">A beautiful conversation, coming soon.</p>
+    </div>
+  </section>
+
+</main>
+
+<footer class="footer">
+  <p>&copy; <span id="year"></span> Dr. Nisha Shastry. All rights reserved.</p>
+</footer>
+
+<script src="script.js"></script>
+<script src="data.js"></script>
+<script src="universe.js"></script>
+<script src="motion.js"></script>
+<script src="signature.js"></script>
+<script type="module" src="universe-camera.js"></script>
+<script>
+  renderNovels("novelsCatalogue");
+  renderComics("comicsCatalogue");
+  renderAudio("audioCatalogue");
+  renderVideo("videoCatalogue");
+  renderSocialLinks("socialGrid");
+  observeReveal('[data-reveal="fade-up"]', 90);
+</script>
+</body>
+</html>

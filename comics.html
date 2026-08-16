@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Comics | Dr. Nisha Shastry</title>
+<meta name="description" content="The Ritugn comic universe of Dr. Nisha Shastry — myths, science and imagination collide." />
+<meta property="og:title" content="Comics | Dr. Nisha Shastry" />
+<meta property="og:description" content="The Ritugn comic universe of Dr. Nisha Shastry." />
+
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400&family=EB+Garamond:ital,wght@0,400;0,500;1,400&display=swap" rel="stylesheet" />
+
+<link rel="stylesheet" href="styles.css" />
+<link rel="stylesheet" href="universe.css" />
+</head>
+<body>
+
+<div class="atmosphere" aria-hidden="true">
+  <div class="atmosphere__field field-1"></div>
+  <div class="atmosphere__field field-2"></div>
+  <div class="atmosphere__field field-3"></div>
+  <div class="atmosphere__grain"></div>
+</div>
+
+<header class="navbar" id="navbar">
+  <div class="navbar__inner">
+    <a href="index.html" class="navbar__brand">Dr. Nisha Shastry</a>
+    <nav class="navbar__links" aria-label="Primary">
+      <a href="index.html#about" class="nav-link">About</a>
+      <a href="novels.html" class="nav-link">Novels</a>
+      <a href="comics.html" class="nav-link active-link">Comics</a>
+      <a href="audiostories.html" class="nav-link">AudioStories</a>
+      <a href="videostories.html" class="nav-link">VideoStories</a>
+      <a href="index.html#members" class="nav-link">Members</a>
+      <a href="index.html#social" class="nav-link">Social Media Handles</a>
+      <a href="index.html#contact" class="nav-link">Contact Me</a>
+    </nav>
+    <button class="navbar__toggle" id="navToggle" aria-label="Open menu" aria-expanded="false" aria-controls="mobileMenu">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+  <div class="mobile-menu" id="mobileMenu">
+    <nav class="mobile-menu__links" aria-label="Mobile Primary">
+      <a href="index.html#about" data-mobile>About</a>
+      <a href="novels.html" data-mobile>Novels</a>
+      <a href="comics.html" data-mobile>Comics</a>
+      <a href="audiostories.html" data-mobile>AudioStories</a>
+      <a href="videostories.html" data-mobile>VideoStories</a>
+      <a href="index.html#members" data-mobile>Members</a>
+      <a href="index.html#social" data-mobile>Social Media Handles</a>
+      <a href="index.html#contact" data-mobile>Contact Me</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+  <section class="universe-section theme-comics" id="comics">
+    <div class="universe-atmosphere" aria-hidden="true">
+      <div class="field field-a"></div>
+      <div class="field field-b"></div>
+    </div>
+
+    <div class="universe-hero">
+      <span class="universe-hero__kicker" data-reveal="fade-up">The Ritugn Universe</span>
+      <h1 class="universe-hero__title" data-reveal="fade-up">Comics</h1>
+      <p class="universe-hero__sub" data-reveal="fade-up">Where myths, science and imagination collide.</p>
+    </div>
+
+    <p class="coming-note">Reading links will go live soon. Cover artwork will appear automatically once added.</p>
+
+    <div class="catalogue" id="comicsCatalogue"></div>
+  </section>
+</main>
+
+<footer class="footer">
+  <p>&copy; <span id="year"></span> Dr. Nisha Shastry. All rights reserved.</p>
+</footer>
+
+<script src="data.js"></script>
+<script src="universe.js"></script>
+<script>
+  renderComics("comicsCatalogue");
+  observeReveal('[data-reveal="fade-up"]', 90);
+</script>
+</body>
+</html>
